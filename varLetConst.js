@@ -20,3 +20,4 @@ const c = 30;
 // c = 40; // re-assignment not allowed;
 console.log(c);
 // const c = 50;  re-declaration not allowed
+// Javascript is single-threaded and synchronous in nature.
