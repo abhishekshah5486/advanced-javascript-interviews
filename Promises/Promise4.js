@@ -7,11 +7,18 @@ const promiseFour = new Promise((res, rej) => {
     }, 1000);
 })
 
-promiseFour.then((data) => {
+// Syntactical 
+promiseFour
+.then((data) => {
     console.log(data);
     return data.username;
-}).then((username) => {
+})
+.then((username) => {
     console.log(username);
-}).catch(() => {
+})
+.catch(() => {
     console.log('Something went wrong.');
+})
+.finally(() => {
+    console.log('The promise is either resolved or rejected.');
 })
