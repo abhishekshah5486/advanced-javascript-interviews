@@ -46,7 +46,12 @@ const obj2 = {
                         aa: 15,
                         bb: {
                             cc: 16,
-                            dd: 17
+                            dd: {
+                                ff: 17,
+                                gg: {
+                                    hh: 18
+                                }
+                            }
                         }
                     }
                 }
