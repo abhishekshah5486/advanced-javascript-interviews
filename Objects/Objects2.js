@@ -28,5 +28,7 @@ const obj2 = {
 
 // Method: Using the spread operator to merge 2 objects
 const mergedObject = {...obj1, ...obj2};
+const mergedObject2 = obj1.concat(obj2);
+console.log(mergedObject2);
 console.log(mergedObject);
 
