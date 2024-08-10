@@ -88,5 +88,13 @@ for (let value of values){
     console.log(value);
 }
 
+// Method 5: Using entries() Method
+const entries = Object.entries(sampleData);
+entries.forEach(([key, value]) => {
+    console.log(`${key} : ${value}`);
+})
 
-// Method 5: Using 
+// Alternatively
+for (let [key, value] of Object.entries(sampleData)){
+    console.log(`${key} : ${value}`);
+}
