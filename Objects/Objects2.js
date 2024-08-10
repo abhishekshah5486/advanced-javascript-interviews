@@ -14,3 +14,19 @@ console.log(spotifyUser);
 console.log(spotifyUser.fullName?.firstname);
 console.log(spotifyUser.fullName?.lastname);
 
+// Merging 2 objects
+const obj1 = {
+    id: '123e4567-e89b-12d3-a456-426614174000',
+    name: 'Abhishek Kumar Shah',
+    age: 20,
+    city: 'Bangalore'
+}
+const obj2 = {
+    email: 'abhishek@google.com',
+    password: 'abi@mac'
+}
+
+// Method: Using the spread operator to merge 2 objects
+const mergedObject = {...obj1, ...obj2};
+console.log(mergedObject);
+
