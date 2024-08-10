@@ -98,3 +98,28 @@ entries.forEach(([key, value]) => {
 for (let [key, value] of Object.entries(sampleData)){
     console.log(`${key} : ${value}`);
 }
+
+const jsUser = {
+    name: 'Abhishek',
+    age: 20,
+    location: 'Bangalore',
+    email: 'abhishek@meta.com',
+    isLoggedIn: false,
+    lastLoginDays: ['Monday', 'Wednesday']
+}
+const mySym = Symbol('myKey1');
+jsUser[mySym] = 'Hello, my symbol';
+console.log(jsUser);
+
+// Method 6: Using Object.getOwnPropertyNames
+const keys3 = Object.getOwnPropertyNames(sampleData);
+// Returns an array containing all the properties of an object
+console.log(keys3);
+// Using Object.getOwnPropertySymbols
+const keys4 = Object.getOwnPropertySymbols(sampleData);
+// Returns an array of all the symbol properties found on an array.
+console.log(keys4);
+// Using Reflect.ownKeys();
+const keys5 = Reflect.ownKeys(sampleData);
+// Returns an array of all property keys including the symbol keys.
+console.log(keys5);
