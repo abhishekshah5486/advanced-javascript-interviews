@@ -19,3 +19,10 @@ console.log(set);
 
 // Get the size of a set
 console.log(set.size);
+
+// Convert a set into an array
+const arr = Array.from(set);
+console.log(arr);
+// Convert an array into a set
+const arrSet = new Set(arr);
+console.log(typeof arrSet);

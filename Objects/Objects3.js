@@ -109,17 +109,28 @@ const jsUser = {
 }
 const mySym = Symbol('myKey1');
 jsUser[mySym] = 'Hello, my symbol';
-console.log(jsUser);
+// console.log(jsUser);
 
 // Method 6: Using Object.getOwnPropertyNames
-const keys3 = Object.getOwnPropertyNames(sampleData);
-// Returns an array containing all the properties of an object
+const keys3 = Object.getOwnPropertyNames(jsUser);
+// Returns an array containing all the property keys (string keys) of an object excluding the symbol keys
 console.log(keys3);
+keys3.forEach((key) => {
+    console.log(`${key} : ${jsUser[key]}`);
+})
 // Using Object.getOwnPropertySymbols
-const keys4 = Object.getOwnPropertySymbols(sampleData);
-// Returns an array of all the symbol properties found on an array.
+const keys4 = Object.getOwnPropertySymbols(jsUser);
+// Returns an array of all the symbol properties found on an object.
+// Returns an array containing all the symbol keys found on an object.
 console.log(keys4);
 // Using Reflect.ownKeys();
-const keys5 = Reflect.ownKeys(sampleData);
+const keys5 = Reflect.ownKeys(jsUser);
 // Returns an array of all property keys including the symbol keys.
+// Returns an array containing both string keys and symbol keys
 console.log(keys5);
+
+for (let key of Reflect.ownKeys(jsUser)){
+    if(typeof key === 'symbol'){
+        console.log(`${key.toString} : ${jsUser[key]}`);
+    }else console.log(`${key} : ${jsUser[key]}`);
+}
