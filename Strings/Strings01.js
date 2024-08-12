@@ -44,3 +44,12 @@ console.log(str.replace('apple.', 'carrot'));
 // replaceAll() --> Replaces all occurences of a substring with another/specified new value.
 const text = "foo bar foo bar";
 console.log(text.replaceAll('foo', 'abhishek'));
+// Expected output: abhishek bar abhishek bar
+
+
+// padStart() --> Pads the start of a string with another string until the length of the string reaches the desired the length.
+const temp = new String('12');
+console.log(temp.padStart(3, -1));
+
+// padEnd() --> Pads the end of a string with another string until the length of the string reaches the desired the length.
+console.log(temp.padEnd(4, -1));
