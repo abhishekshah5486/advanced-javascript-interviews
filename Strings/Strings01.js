@@ -14,6 +14,7 @@ console.log(username.indexOf('m'));
 // Checks if a string starts with a particular keyword
 // Returns a boolean result
 console.log(username.startsWith('b'));
+console.log(username.endsWith('ay'));
 
 // trim() Methods
 // trimEnd() trimStart() trimRight() trimLeft();
@@ -27,6 +28,14 @@ console.log(password);
 // concat() Method
 // Concat or combine two or more strings and return a new string
 console.log(name.concat(password.trim()));
+
+// Repeat() --> Repeats a string specified number of times and returns a new string
+console.log(username.repeat(2));
+
+// Split() Method --> Splits a string into an array of substrings based on a specified delimiter and returns a new array.
+const str = "apple.banana.orange.oats.grapes";
+const arr = str.split('.');
+console.log(arr);
 
 
 
