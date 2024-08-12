@@ -37,5 +37,10 @@ const str = "apple.banana.orange.oats.grapes";
 const arr = str.split('.');
 console.log(arr);
 
+// Replace() Method --> Replaces a specified value or pattern in a string with a new value.
+console.log(str.replace('apple.', 'carrot'));
+// Expected output: carrotbanana.orange.oats.grapes
 
-
+// replaceAll() --> Replaces all occurences of a substring with another/specified new value.
+const text = "foo bar foo bar";
+console.log(text.replaceAll('foo', 'abhishek'));
