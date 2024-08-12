@@ -53,3 +53,25 @@ console.log(temp.padStart(3, -1));
 
 // padEnd() --> Pads the end of a string with another string until the length of the string reaches the desired the length.
 console.log(temp.padEnd(4, -1));
+
+
+// substr() --> Extracts a substring of a string starting at a index and continuing for a given number of characters.
+const word = new String('JavaScript');
+console.log(word.substr(1, 3));
+
+// substring() --> (startIndex, endIndex) endIndex is exclusive
+// It converts negative index to 0.
+// If the start index is greater than the end index, the substring() method will swap the start and end indices.
+console.log(word.substring(-1, 3)) // Index 0 to 3;
+console.log(word.substring(-1, -2)) // Index 0 to 0
+console.log(word.substring(3, -3)) // Index 3 to 0
+
+// slice() --> (startIndex, endIndex) EndIndex is exclusive
+// Slice can handle negative indices
+// If the start index is greater than the end index, the substring() method will not swap the start and end indices.
+console.log(word.length);
+console.log(word.slice(4)); // Index 4 to the end of the string
+console.log(word.slice(4, 6)) // Index 4 to 6-1
+console.log(word.slice(-1)) // Index word.length+(-1) to the end of string
+console.log(word.slice(-3, -1)) // Index 7 to index 8
+console.log(word.slice(2, 0))
