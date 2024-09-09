@@ -15,6 +15,7 @@ var b = {
 // the proto of b is pointing to the properties of a.
 
 console.log(b.x);
+
 console.log(b.calculate(10));
 
 // var c = {
