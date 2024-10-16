@@ -45,7 +45,7 @@ a.greet = function()
 a.greet();
 b.greet();
 
-a.__proto__.greet = function()
+Object.getPrototypeOf(a).greet = function()
 {
     console.log('ISB YLP Program for young innovators.');
 }

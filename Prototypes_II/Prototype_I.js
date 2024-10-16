@@ -19,4 +19,4 @@ console.log(typeof (foo.prototype));
 var b = new foo(20);
 console.log(b.calculate);
 
-// __proto__ of the object instance b points to foo.prototype and can access all methods and properties of foo.prototype object
+// __proto__ of the object instance b points to foo.prototype and can access all methods and properties of foo.prototype object of the constructor function
